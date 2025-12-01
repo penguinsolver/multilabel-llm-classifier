@@ -1,0 +1,3 @@
+Rationale voor positieve labels. Alleen JSON object teruggeven zonder uitleg.
+Labels: {labels_csv}
+TEXT: """{text}"""

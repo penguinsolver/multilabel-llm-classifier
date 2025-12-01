@@ -1,0 +1,4 @@
+N={n_labels}
+{label_block}
+TEXT: """{text}"""
+Output: alleen bitstring.

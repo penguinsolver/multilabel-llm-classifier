@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  multilabel-llm:
+    build: .
+    command: python main.py --demo --mock --artifacts-dir /app/artifacts
+    volumes:
+      - ./artifacts:/app/artifacts
+    environment:
+      - PYTHONUNBUFFERED=1

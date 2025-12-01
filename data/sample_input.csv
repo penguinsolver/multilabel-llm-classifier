@@ -1,0 +1,4 @@
+text_id,text,y_true
+sample_1,"Payment failed but card charged twice",["PAYMENT_ISSUE"]
+sample_2,"Two-factor code times out and cannot log in",["LOGIN_PROBLEM"]
+sample_3,"Please add export to CSV and dark mode",["FEATURE_REQUEST"]

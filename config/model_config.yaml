@@ -1,0 +1,3 @@
+model: Qwen/Qwen2.5-7B-Instruct
+device: cpu
+mock: true

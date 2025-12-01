@@ -1,0 +1,55 @@
+labels:
+  - name: PAYMENT_ISSUE
+    definition: Problems related to payments, charges, billing failures, or refunds.
+    not_definition: Not about login, feature requests, or general dissatisfaction without payment aspects.
+    examples_positive:
+      - Payment failed but my card was charged twice.
+      - I want a refund because the invoice is wrong.
+    examples_negative:
+      - I cannot sign in after the update.
+      - Please add dark mode.
+  - name: LOGIN_PROBLEM
+    definition: Issues signing in, password reset failures, 2FA or session problems.
+    not_definition: Not about billing or new features; not generic complaints.
+    examples_positive:
+      - Two-factor code keeps timing out and I cannot log in.
+      - Password reset email never arrives.
+    examples_negative:
+      - The receipt shows the wrong total.
+      - Can you add export to CSV?
+  - name: CANCELLATION
+    definition: Requests to cancel or terminate subscription or order.
+    not_definition: Not pauses or downgrades; not a refund unless paired with cancel intent.
+    examples_positive:
+      - Cancel my membership immediately.
+      - Please stop my subscription and confirm.
+    examples_negative:
+      - The app crashed after login.
+      - I need a refund for last month.
+  - name: FEATURE_REQUEST
+    definition: Asking for new capabilities, improvements, integrations, or customizations.
+    not_definition: Not bug reports or complaints without a proposed feature.
+    examples_positive:
+      - Could you add biometric login support?
+      - Please provide a monthly usage report download.
+    examples_negative:
+      - The payment page is broken.
+      - Cancel my account today.
+  - name: COMPLAINT_TONE
+    definition: Message contains strong negative or angry sentiment about service quality.
+    not_definition: Neutral troubleshooting or polite feature requests.
+    examples_positive:
+      - This service is terrible and I am furious.
+      - I am sick of your constant errors, fix it now.
+    examples_negative:
+      - Could you help me reset my password?
+      - Please consider adding SSO.
+  - name: PERSONAL_DATA_MENTION
+    definition: Mentions of personal data such as email, phone, address, ID numbers.
+    not_definition: Generic account references without explicit personal data.
+    examples_positive:
+      - My email john.doe@example.com is leaking to others.
+      - The app exposed my phone number 555-1234.
+    examples_negative:
+      - My account was locked yesterday.
+      - Please refund the latest invoice.

@@ -1,0 +1,5 @@
+Vorige output was ongeldig. Geef alleen bitstring exact lengte {n_labels} met 0/1, geen extra tekst. Herhaal de taak.
+N={n_labels}
+{label_block}
+TEXT: """{text}"""
+Output: alleen bitstring.

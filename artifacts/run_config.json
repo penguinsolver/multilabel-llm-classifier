@@ -1,0 +1,30 @@
+{
+  "args": {
+    "demo": true,
+    "trainval": false,
+    "predict": false,
+    "config": "config/labels_demo.yaml",
+    "model_config": "config/model_config.yaml",
+    "model": null,
+    "device": null,
+    "mock": true,
+    "prompt_file": "config/prompt_template.txt",
+    "rationale": false,
+    "seed": 42,
+    "grid_step": 0.01,
+    "input": null,
+    "output": null,
+    "thresholds": null,
+    "artifacts_dir": "/app/artifacts"
+  },
+  "extra": {
+    "label_order": [
+      "PAYMENT_ISSUE",
+      "LOGIN_PROBLEM",
+      "CANCELLATION",
+      "FEATURE_REQUEST",
+      "COMPLAINT_TONE",
+      "PERSONAL_DATA_MENTION"
+    ]
+  }
+}

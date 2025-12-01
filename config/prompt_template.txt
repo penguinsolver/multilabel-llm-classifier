@@ -1,0 +1,20 @@
+[SYSTEM]
+Je bent een deterministische classificatiemodule. Output is EXACT een bitstring van lengte {n_labels}. Alleen chars 0 of 1. Geen spaties, geen newline, geen uitleg. Multi-label toegestaan. Als je twijfelt: kies 0. Gebruik labelvolgorde exact zoals gegeven.
+
+[USER]
+N={n_labels}
+{label_block}
+TEXT: """{text}"""
+Output: alleen bitstring.
+
+[REPAIR]
+Vorige output was ongeldig. Geef alleen bitstring exact lengte {n_labels} met 0/1, geen extra tekst. Herhaal de taak.
+N={n_labels}
+{label_block}
+TEXT: """{text}"""
+Output: alleen bitstring.
+
+[RATIONALE]
+Rationale voor positieve labels. Alleen JSON object teruggeven zonder uitleg.
+Labels: {labels_csv}
+TEXT: """{text}"""

@@ -3,7 +3,7 @@
 ## Wat is het?
 - Lokale, reproduceerbare multi-label classifier met open-source LLM (Qwen 2.5 7B Instruct) of mock backend (geen download nodig).
 - Output per tekst: bitstring, probabilities uit logits, thresholds per label, optionele rationale (JSON).
-- Eén promptbestand (`config/prompt_template.txt`), één labels-bestand (`config/labels_demo.yaml`), één modelconfig (`config/model_config.yaml`).
+- EÃ©n promptbestand (`config/prompt_template.txt`), Ã©Ã©n labels-bestand (`config/labels_demo.yaml`), Ã©Ã©n modelconfig (`config/model_config.yaml`).
 - Dummy data + demo run zorgen dat alles direct draait.
 
 ## Must-have snelle start
@@ -39,17 +39,17 @@ GPU (optioneel): `docker run --gpus all ... python main.py --demo --device cuda 
 6) Optioneel rationale: voeg `--rationale` toe bij predict.
 
 ## Belangrijke bestanden (simpel gehouden)
-- `config/prompt_template.txt` – gecombineerd promptbestand met secties [SYSTEM]/[USER]/[REPAIR]/[RATIONALE]. Pas in teksteditor aan.
-- `config/labels_demo.yaml` – labels/definities/voorbeelden (volgorde = bitstring index).
-- `config/model_config.yaml` – standaard model/device/mock.
-- `data/sample_input.csv` – voorbeeldinput (text_id,text,y_true).
-- `main.py` – CLI/orkestratie.
-- `src/prompting.py` – leest promptbestand en bouwt berichten.
-- `src/llm_infer.py` – mock/real model, logits?probabilities.
-- `src/thresholds.py`/`src/metrics.py`/`src/parsing.py`/`src/data_gen.py` – thresholds/metrics/validatie/dummy data.
-- `tests/` – unit + smoke.
+- `config/prompt_template.txt` â€“ gecombineerd promptbestand met secties [SYSTEM]/[USER]/[REPAIR]/[RATIONALE]. Pas in teksteditor aan.
+- `config/labels_demo.yaml` â€“ labels/definities/voorbeelden (volgorde = bitstring index).
+- `config/model_config.yaml` â€“ standaard model/device/mock.
+- `data/sample_input.csv` â€“ voorbeeldinput (text_id,text,y_true).
+- `main.py` â€“ CLI/orkestratie.
+- `src/prompting.py` â€“ leest promptbestand en bouwt berichten.
+- `src/llm_infer.py` â€“ mock/real model, logits?probabilities.
+- `src/thresholds.py`/`src/metrics.py`/`src/parsing.py`/`src/data_gen.py` â€“ thresholds/metrics/validatie/dummy data.
+- `tests/` â€“ unit + smoke.
 
-## Prompt aanpassen (één file)
+## Prompt aanpassen (Ã©Ã©n file)
 - Open `config/prompt_template.txt`.
 - Placeholders: `{n_labels}`, `{label_block}`, `{text}`, `{labels_csv}` (rationale).
 - Gebruik de blokken [SYSTEM]/[USER]/[REPAIR]/[RATIONALE]; CLI `--prompt-file` kan een ander .txt aanwijzen.
@@ -66,7 +66,7 @@ GPU (optioneel): `docker run --gpus all ... python main.py --demo --device cuda 
 - HuggingFace dataset? Exporteer naar CSV met dezelfde kolommen.
 
 ## Pipeline (kort)
-input text ? prompt ? bitstring ? logits ? probabilities ? threshold grid search ? final labels ? artifacts.
+input text -> prompt -> bitstring -> logits -> probabilities -> threshold grid search -> final labels -> artifacts.
 
 ## Thresholds opnieuw trainen
 `python main.py --trainval --mock --grid-step 0.02` (synthetic) of met eigen CSV `--input your.csv`. Resultaat: `artifacts/thresholds.json`.

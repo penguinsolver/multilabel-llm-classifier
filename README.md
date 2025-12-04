@@ -5,7 +5,7 @@
 - Output per tekst: bitstring, probabilities uit logits, thresholds per label, optionele rationale (JSON).
 - Eén promptbestand (`config/prompt_template.txt`), één labels-bestand (`config/labels_demo.yaml`), één modelconfig (`config/model_config.yaml`).
 - Dummy data + demo run zorgen dat alles direct draait.
-- *Iteratieve werkwijze: na elke run kun je de outputs analyseren, de prompt/labelbeschrijvingen verfijnen (begin met de meest voorkomende labels, breid later uit), thresholds opnieuw trainen, en zo via human feedback de macro/weighted F1 per cyclus verbeteren.*
+- ***Iteratieve werkwijze: na elke run kun je de outputs analyseren, de prompt/labelbeschrijvingen verfijnen (begin met de meest voorkomende labels, breid later uit), thresholds opnieuw trainen, en zo via human feedback de macro/weighted F1 per cyclus verbeteren.***
 
 ## Must-have snelle start
 ### Native (mock, geen model download)
